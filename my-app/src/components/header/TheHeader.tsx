@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../ui/Button';
+import BasketIcon from '@/assets/header/BasketIcon';
+import LocationIcon from '@/assets/header/LocationIcon';
+import LanguageIcon from '@/assets/header/LanguageIcon';
 
 const Header = () => {
   const pageLinks = [
@@ -40,10 +43,17 @@ const Header = () => {
               </ul>
             </nav>
             <div className="flex gap-x-7">
-              <div>location</div>
-              <div>ENG</div>
+              <div className="flex gap-1 items-center">
+                <LocationIcon></LocationIcon>
+                <div>Set location</div>
+              </div>
+              <div className="flex gap-1 items-center">
+                <LanguageIcon></LanguageIcon>
+                <div>ENG</div>
+              </div>
               <div className="flex gap-1.5">
-                <Link href="login">Login</Link>
+                <Link href="login">Sign in</Link>
+                {'/'}
                 <Link href="signup">Sign up</Link>
               </div>
             </div>
@@ -80,11 +90,12 @@ const Header = () => {
               </ul>
             </nav>
             <div className="flex items-center gap-x-4 relative ">
-              <Button bgColor="#000000" href="/order" color="#ffffff" >
+              <Button bgColor="#000000" href="/order" color="#ffffff">
                 Order Now
               </Button>
               <span className="after:absolute after:content-[''] after:top-[-12px] after:h-[66px] after:w-[1px] after:bg-[#F2F2F2]"></span>
-              <div>
+              <div className="flex gap-3 items-center">
+                <BasketIcon></BasketIcon>
                 <Link href="/basket">Basket</Link>
               </div>
             </div>

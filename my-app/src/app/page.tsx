@@ -49,7 +49,7 @@ const icons = [
 ];
 
 export default async function Home() {
-  const posts = await getPosts();
+  // const posts = await getPosts();
 
   return (
     <>
@@ -152,7 +152,7 @@ export default async function Home() {
           <p className="mb-8 text-[15px]">
             Be aware of all the latest news and posts
           </p>
-          <BlogPost posts={posts}></BlogPost>
+          {/* <BlogPost posts={posts}></BlogPost> */}
         </div>
       </section>
     </>
