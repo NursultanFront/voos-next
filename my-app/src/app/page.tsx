@@ -10,6 +10,7 @@ import YoutubeIcon from '@/assets/social/youtube.svg';
 
 import BlogPost from '@/components/blogPost/BlogPost';
 import { api } from '@/api';
+import { ButtonLink } from '@/components/ui/Buttons';
 
 async function getPosts() {
   const res = await api.posts.getPosts({
@@ -67,9 +68,14 @@ export default async function Home() {
           <div className="mb-3 text-sm">VOOS</div>
           <h2 className="mb-6 text-5xl">Buds, Joints, Vapes, Cartridges</h2>
           <div className="mb-7 text-sm">Delivery Available in&nbsp;EU</div>
-          <Link href="/" className="py-3 px-4 border-2 border-black rounded-lg">
-            <span>Order now</span>
-          </Link>
+          <ButtonLink
+            bgColor="#ffffff"
+            color="#000000"
+            href="/"
+            className="py-3 px-4 border-2 border-black rounded-lg"
+          >
+            Order now
+          </ButtonLink>
         </div>
       </div>
       <section className="py-12">

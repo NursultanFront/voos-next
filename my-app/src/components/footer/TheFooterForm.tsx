@@ -5,7 +5,7 @@ import { useForm, Controller, SubmitHandler } from 'react-hook-form';
 import TextField from '../ui/Input/TextField';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import Button from '../ui/Button';
+import { Button } from '../ui/Buttons';
 
 type FormData = yup.InferType<typeof schema>;
 
@@ -51,12 +51,12 @@ const FooterForm = () => {
         required
         className="py-3 px-4 text-[13px] bg-black border-[2px] rounded-lg border-[rgba(255,255,255,.3)]"
       ></TextField>
-      <button
+      <Button
         type="submit"
         className="flex items-center py-2 px-4 bg-white text-black rounded-lg"
       >
         <span>Subscribe</span>
-      </button>
+      </Button>
     </form>
   );
 };

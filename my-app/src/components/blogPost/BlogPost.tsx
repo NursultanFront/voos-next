@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Row from '../ui/grid/Row';
 import Column from '../ui/grid/Column';
-import Button from '../ui/Button';
+import { ButtonLink } from '../ui/Buttons';
 
 import { Posts } from '@/api/posts/types';
 import { getStrapiMedia } from '@/libs/media';
@@ -40,14 +40,14 @@ const BlogPost = (props: Props) => {
         })}
       </Row>
       <div className="flex justify-center">
-        <Button
+        <ButtonLink
           bgColor="#ffffff"
           color="#000000"
           href="/some"
-          className="border-[1px] border-black"
+          className="py-[9px] px-[15px] border-[1px] border-black"
         >
           See all
-        </Button>
+        </ButtonLink>
       </div>
     </>
   );
