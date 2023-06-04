@@ -4,6 +4,8 @@ import { Button, ButtonLink } from '../ui/Buttons';
 import BasketIcon from '@/assets/header/BasketIcon';
 import LocationIcon from '@/assets/header/LocationIcon';
 import LanguageIcon from '@/assets/header/LanguageIcon';
+import { useState } from 'react';
+import LangChoice from '../langChoice/LangChoice';
 
 const Header = () => {
   const pageLinks = [
@@ -47,10 +49,9 @@ const Header = () => {
                 <LocationIcon></LocationIcon>
                 <div>Set location</div>
               </Button>
-              <Button className="flex gap-1 items-center">
-                <LanguageIcon></LanguageIcon>
-                <div>ENG</div>
-              </Button>
+
+              <LangChoice />
+
               <div className="flex gap-1.5">
                 <Link href="login">Sign in</Link>
                 {'/'}
