@@ -3,9 +3,9 @@ import Image from 'next/image';
 import { Button, ButtonLink } from '../ui/Buttons';
 import BasketIcon from '@/assets/header/BasketIcon';
 import LocationIcon from '@/assets/header/LocationIcon';
-import LanguageIcon from '@/assets/header/LanguageIcon';
-import { useState } from 'react';
 import LangChoice from '../langChoice/LangChoice';
+import LocationPopup from '../location/LocationPopup';
+import { LocationHeader } from '../location/LocationHeader';
 
 const Header = () => {
   const pageLinks = [
@@ -45,11 +45,7 @@ const Header = () => {
               </ul>
             </nav>
             <div className="flex gap-x-7">
-              <Button className="flex gap-1 items-center">
-                <LocationIcon></LocationIcon>
-                <div>Set location</div>
-              </Button>
-
+              <LocationHeader />
               <LangChoice />
 
               <div className="flex gap-1.5">
