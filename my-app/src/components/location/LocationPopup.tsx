@@ -48,7 +48,7 @@ const LocationPopup = (props: Props) => {
             get delivery price
           </p>
           <div className="mb-6 w-full">
-            <LocationSelect selectCounrty={selectCountry} />
+            <LocationSelect selectCountry={selectCountry} />
           </div>
 
           <Button
