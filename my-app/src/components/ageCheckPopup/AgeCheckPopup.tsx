@@ -58,7 +58,7 @@ const AgeCheckPopup = () => {
                 <Button onClick={handleCloseModal} className='bg-black text-white text-[15px] leading-[27px] font-medium rounded-lg w-[360px] h-[45px] mb-[10px]'>I’m at least 18 years old</Button>
                 <Button onClick={handleExit} className='text-black leading-[27px] text-[15px] bg-white w-[360px] h-[45px] rounded-lg mb-[30px]'>Exit this site</Button>
                 <label className='text-[13px] flex' >
-                    <input type="checkbox" required className='relative appearance-none peer w-[18px] h-[18px] border rounded focus:outline-none checked:bg-black checked:bg-[url("/popup/accept.svg")] checked:bg-no-repeat checked:bg-center hover:ring hover:ring-black hover:ring-[1px] cursor-pointer'/>
+                    <input type="checkbox" required className='relative appearance-none peer w-[18px] h-[18px] border-2 border-black rounded focus:outline-none checked:bg-black checked:bg-[url("/popup/accept.svg")] checked:bg-no-repeat checked:bg-center hover:ring-[3px] hover:ring-black/[0.2] hover:ring-[1px] cursor-pointer'/>
                     <p className='ml-[9px]'>I agree to VOOS’s <a className='text-[#0073C7]' href='/'>Terms of Use</a> and <a className='text-[#0073C7]' href='/'>Privacy Policy</a>.</p>
                 </label>
             </div>
