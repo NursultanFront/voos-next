@@ -8,7 +8,7 @@ type IOptions = {
 };
 
 type Props = {
-  selectCounrty: (value: string | null) => void;
+  selectCountry: (value: string | null) => void;
 };
 
 const options: IOptions[] = [
@@ -17,7 +17,7 @@ const options: IOptions[] = [
   { value: 'vanilla', label: 'Vanilla' },
 ];
 
-const LocationSelect = ({ selectCounrty }: Props) => {
+const LocationSelect = ({ selectCountry }: Props) => {
   const [currentCountry, setCurrentCounrty] = useState<
     IOptions['value'] | null
   >(null);
@@ -35,7 +35,7 @@ const LocationSelect = ({ selectCounrty }: Props) => {
       <Button
         className="py-[9px] w-full text-center text-white bg-black rounded-lg"
         onClick={() => {
-          selectCounrty(currentCountry);
+          selectCountry(currentCountry);
         }}
       >
         Apply

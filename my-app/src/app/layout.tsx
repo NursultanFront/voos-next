@@ -3,6 +3,7 @@ import TheHeader from '@/components/header/TheHeader';
 import TheFooter from '@/components/footer/TheFooter';
 import './globals.css';
 import LocationPopup from '@/components/location/LocationPopup';
+import AgeCheckPopup from '@/components/ageCheckPopup/AgeCheckPopup';
 
 const inter = Inter({ subsets: ['latin'] });
 export const poppins = Poppins({
@@ -26,6 +27,7 @@ export default function RootLayout({
         <TheHeader></TheHeader>
         {children}
         <TheFooter></TheFooter>
+        <AgeCheckPopup></AgeCheckPopup>
         <LocationPopup></LocationPopup>
       </body>
     </html>
